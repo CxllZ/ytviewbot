@@ -1,4 +1,4 @@
-PYTHON 3 NEEDED!
+PYTHON 3 AND A VPN (to change location since youtube doesn't allow high traffic from same ip)NEEDED!
 
 pip install pyfiglet or python -m pip install pyfiglet
 
