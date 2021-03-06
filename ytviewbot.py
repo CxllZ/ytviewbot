@@ -24,6 +24,7 @@ print("browser:",brow)
 print("")
 
 chrome_win = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s --incognito'
+chrome_mac = '/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --incognito'
 
 
 while True:
@@ -43,7 +44,7 @@ if correct == 'y':
             else:
                 print("Successfully Viwed. ")
                 os.system("taskkill /im",brow,"/")
-                webbrowser.open(url)
+                webbrowser.get(chrome_mac).open(url)
                 time.sleep(int(minimum))
 if correct == 'n':
     print("RESTARTING...")
