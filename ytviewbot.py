@@ -1,8 +1,20 @@
-import webbrowser
-import time
-import pyfiglet
-import platform
+#/usr/bin/python3
+import sys
 import os
+import platform
+import time
+
+try:
+    import pyfiglet
+    import webbrowser
+except ModuleNotFoundError:
+    print("modules are not installed")
+    os.system("pip3 install pyfiglet webbrowser")
+
+if platform.system() == 'Windows':
+    os.system("cls")
+else:
+    os.system("clear")
 
 ascii_banner = pyfiglet.figlet_format("ViewBot")
 print(ascii_banner)
