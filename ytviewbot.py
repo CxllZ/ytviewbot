@@ -9,7 +9,7 @@ try:
     import webbrowser
 except ModuleNotFoundError:
     print("modules are not installed")
-    os.system("pip3 install pyfiglet webbrowser")
+    os.system("pip install pyfiglet webbrowser")
 
 if platform.system() == 'Windows':
     os.system("cls")
